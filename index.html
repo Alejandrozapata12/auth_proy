@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Auth</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+    <div class="init">
+        <!--Icon start-->
+        <div class="containerIcon">
+            <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M680-280q25 0 42.5-17.5T740-340q0-25-17.5-42.5T680-400q-25 0-42.5 17.5T620-340q0 25 17.5 42.5T680-280Zm0 120q31 0 57-14.5t42-38.5q-22-13-47-20t-52-7q-27 0-52 7t-47 20q16 24 42 38.5t57 14.5ZM480-80q-139-35-229.5-159.5T160-516v-244l320-120 320 120v227q-19-8-39-14.5t-41-9.5v-147l-240-90-240 90v188q0 47 12.5 94t35 89.5Q310-290 342-254t71 60q11 32 29 61t41 52q-1 0-1.5.5t-1.5.5Zm200 0q-83 0-141.5-58.5T480-280q0-83 58.5-141.5T680-480q83 0 141.5 58.5T880-280q0 83-58.5 141.5T680-80ZM480-494Z"/></svg></span>
+        </div><br>
+        <!--Icon end-->
+
+        <!--Title start-->
+        <div class="container_title">
+            <h1 class="title">Welcome back</h1><br>
+            <p>Enter your credentials to access your account.</p><br>
+        </div>
+        <!--Title end-->
+    </div><br>
+    <div class="container">
+
+        <!--Form start-->
+        <form action="#" id="data_e">
+            <label for="email">Email address</label>
+            <input id="userName" type="email" autocomplete="email" placeholder="name@company.com" required="">
+
+            <label for="password">Password</label>
+            <input id="password" type="password" name="password" placeholder="••••••••" required="" autocomplete="off">
+
+            <!--Remember me start-->
+            <div class="check">
+                <input name="remember-me" type="checkbox" />
+                <label class="ml-2 block text-sm text-slate-300 select-none" for="remember-me">
+                    Remember me </label>
+                <!--password start-->
+                <a href="#" class="forgot">
+                    Forgot password?
+                </a>
+                <!--password end-->
+            </div>
+            <!--Remember me end-->
+ 
+            <!--button start-->
+            <div class="container_btn">
+                <button type="submit">
+                    Sign in
+                </button>
+            </div>
+            <!--button end-->
+            <p class="signUp">
+            <span>Don't have an account?</span>
+            <a href="#">Sign up</a>
+        </p>
+        </form>
+        <!--Form end-->
+
+        <p id="error" style="color: red;"></p>
+        
+    </div>
+
+    <script src="./js/auth_log.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>

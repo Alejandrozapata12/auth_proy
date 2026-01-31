@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #6366f1;
+    --primary-hover: #4f46e5;
+    --background-light: #1e293b;
+    --background-dark: #0f172a;
+    --card-dark: #1e293b;
+    --border-dark: #334155;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--background-dark);
+}
+
+/*LOGIN START*/
+
+.init {
+    .containerIcon {
+        text-align: center;
+        margin-top: 2rem;
+
+        .icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px;
+            background-color: #6D28D9;
+            border-radius: 10px;
+            color: antiquewhite;
+        }
+
+        .icon:hover {
+            background-color: #7C3AED;
+            transform: scale(1.05);
+            transition: all 0.2s ease;
+            color: white;
+        }
+    }
+
+    .container_title {
+        h1 {
+            color: #fff;
+            text-align: center;
+
+        }
+
+        p {
+            color: #8f8f8f;
+            text-align: center;
+        }
+    }
+}
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: var(--card-dark);
+    margin: 0 auto;
+    padding: 24px;
+    width: 500px;
+    border-radius: 12px;
+    border: 1px solid var(--border-dark);
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+
+        label {
+            color: antiquewhite;
+        }
+
+        input {
+            background-color: var(--background-dark);
+            border: 1px solid var(--border-dark);
+            border-radius: 12px;
+            padding: 12px;
+            color: rgb(177, 176, 176);
+        }
+
+        input:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(109, 40, 217, 0.25);
+            transition: all 0.2s ease;
+            color: rgb(177, 176, 176);
+        }
+    }
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 8px;
+}
+
+.check input[type="checkbox"] {
+    width: 12px;
+    height: 12px;
+    accent-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.check {
+    a {
+        text-decoration: none;
+        color: var(--primary-color);
+        transform: translateX(180px);
+    }
+
+    a:hover {
+        color: var(--primary-hover);
+        text-decoration: underline;
+    }
+
+}
+
+.container_btn {
+    margin: 8px;
+
+    button[type="submit"] {
+        width: 100%;
+        height: 50px;
+        border-radius: 11px;
+        border: 1px solid var(--border-dark);
+        background-color: var(--primary-color);
+        color: #fff;
+        cursor: pointer;
+        font-weight: bold;
+        box-shadow: 0 0 2px var(--primary-hover);
+        transition: all 300ms ease;
+
+    }
+
+    button[type="submit"]:hover {
+        box-shadow: 0 0 5px var(--primary-hover);
+        transition: all 300ms ease;
+    }
+}
+
+.signUp {
+    text-align: center;
+    padding: 10px;
+
+    span {
+        color: white;
+    }
+
+    a {
+        color: var(--primary-color);
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+/*LOGIN END*/
+
+/*DASHBOARD EMP START*/
+
+
+/*DASHBOARD EMP END*/
+
