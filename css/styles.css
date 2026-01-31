@@ -10,9 +10,13 @@
     --primary-color: #6366f1;
     --primary-hover: #4f46e5;
     --background-light: #1e293b;
-    --background-dark: #0f172a;
+    --background-dark: #303849;
     --card-dark: #1e293b;
     --border-dark: #334155;
+    --sidebar-dark: #020617;
+    --primary-neon: #00d9ff;
+    --primary: #3b82f6;
+    --card-dark: #1e293b;
 }
 
 body {
@@ -168,6 +172,123 @@ body {
 
 /*DASHBOARD EMP START*/
 
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 280px;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--sidebar-dark);
+
+    .log {
+        padding: 12px;
+        display: flex;
+        flex-flow: row wrap;
+        gap: 8px;
+        justify-content: center;
+        align-items: center;
+
+        .container_title {
+            display: flex;
+            flex-flow: column wrap;
+
+            .title_icon {
+                color: white;
+            }
+
+            small {
+                color: aliceblue;
+            }
+
+            .icon {
+                color: white;
+            }
+        }
+
+    }
+
+    .items {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 12px;
+
+        a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            padding: 10px 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            border-left: 2px solid transparent;
+
+            color: #fff;
+            transition:
+                color 300ms ease,
+                background-color 300ms ease,
+                box-shadow 300ms ease;
+
+            .item_svg {
+                display: flex;
+                align-items: center;
+
+                svg {
+                    width: 24px;
+                    height: 24px;
+                    flex-shrink: 0;
+                }
+            }
+
+            &:hover {
+                color: var(--primary-neon);
+                background-color: var(--card-dark);
+
+                a:hover {
+                    border-left-color: var(--primary-neon);
+                }
+
+
+                box-shadow: 0 0 6px var(--primary-neon),
+                0 0 12px rgba(0, 255, 204, 0.4);
+            }
+        }
+    }
+
+
+
+
+    .log_out {
+        margin-top: auto;
+        margin-left: 10px;
+
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 90%;
+
+        padding: 10px;
+        border-radius: 8px;
+        text-decoration: none;
+
+        color: #ff4d4d;
+
+        transition: background-color 300ms ease, box-shadow 300ms ease;
+
+        svg {
+            fill: currentColor;
+        }
+
+        &:hover {
+            background-color: rgba(255, 77, 77, 0.15);
+            box-shadow: 0 0 6px rgba(255, 77, 77, 0.6);
+        }
+    }
+
+}
+
 
 /*DASHBOARD EMP END*/
-
