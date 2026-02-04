@@ -2,11 +2,11 @@
 
 // Employee credentials
 const user_emp = "emp@correo.com";
-const pass_emp = "14388899";
+const pass_emp = "emp123";
 
 // Admin credentials
 const user_admin = "admin@correo.com";
-const pass_admin = "ad1487";
+const pass_admin = "admin123";
 
 // DOM references
 const form = document.getElementById("data_e");

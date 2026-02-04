@@ -886,9 +886,18 @@ body {
                 border-radius: 12px;
                 background-color: var(--background-light);
                 padding: 12px;
+                background-color: var(--primary);
+                transition: all 300ms ease;
 
                 p {
-                    color: gray;
+                    color: white;
+                    cursor:pointer;
+
+                    span{
+                        svg{
+                            vertical-align:middle;
+                        }
+                    }
                 }
             }
         }
